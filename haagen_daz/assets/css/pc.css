@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*pc version*/
+
+html {margin: 0; padding: 0;}
+body {margin: 0; padding: 0;}
+ul {list-style: none; padding: 0; margin: 0;}
+a {text-decoration: none;}
+
+/*header*/
+
+header {display: flex; flex-wrap: nowrap; align-items:center; justify-content:left;}
+header img {padding: 20px;}
+header .logo {width: 7%; padding: 15px 43% 15px 4%; border:none;}
+header .menubar {display: none;}
+header {background-color: #3a0b1e; color: white;}
+header ul {display: flex;}
+header ul li {padding: 0 10px; text-align: center;}
+header a {color: #fff; font-family: 'Aeonik-regular',arial,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; text-transform:uppercase; font-size: 15px; transition: all 0.4s;}
+header a:hover {opacity: 0.5; font-size: 15.5px;}
+
+/*main*/
+
+/*================*/
+
+main {display: flex; flex-direction: row; flex-wrap:wrap; width: 100%;}
+
+main section {margin: 0; padding: 0; width: 50%;}
+main section.bg1 {margin: 0; padding: 0; position: relative; width: 50%;} 
+main section.bg1 .icecc {height:auto; padding: 0; margin: 0; vertical-align: bottom; width: 100%;}
+main .bg1 .nextimg {max-width:6%; position:absolute; right: 5%; top: 50%;}
+
+/*================*/
+main .script1 {background-color: #570f26; color: white; width: 42%; margin: 0; padding: 0 4%; position: relative; padding-top: 5%; position: relative;}
+main .script1 h1 {font-family: 'Silk_Serif','Times New Roman', Times, serif; font-size: 42px; margin: 0; vertical-align: top;}
+main .script1 h3 {font-family: 'Silk_Serif','Times New Roman', Times, serif; font-size: 29px; margin: -10px 0;}
+main .script1 h3 span {font-family:'Aeonik-medium',arial,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:lighter;}
+main .script1 p {font-family: 'Noto Sans KR'; font-size: 12px; font-weight: 300; margin: 5px 0;}
+main .script1 .haagen {font-family: 'Noto Sans KR';font-size: 18px; font-weight: 400; margin: 30px 0 10px 0;}
+main .onlineshop {font-family: 'Silk_Serif','Times New Roman', Times, serif; text-transform: uppercase; font-size: 35px;}
+main .produc {display: flex; justify-content: space-between;}
+main .script1 .onlineshop a {color: white;}
+main .script1 .newproduct p {font-size: 15px;}
+main .script1 .produc {padding-top: 10vh;}
+main .produc .newproduct {position: relative; width: 150px;}
+main .produc .pointer2 {width: 40%; position: absolute; top: 2%; right: 0; transform: rotate(-45deg);}
+
+
+/*================*/
+main section.bg2 {margin: 0; padding: 0; vertical-align: bottom; height: auto; order: 4; background-color: pink;}
+main .bg2 img {width: 900px; vertical-align: bottom;}
+main .script2 {background-color: #570f26; color: white; width: 50%; order: 3;}
+main .script2 .haggendaz{font-family:'Aeonik-regular',arial,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15.56px; padding: 5% 20px; border-bottom: white solid 1px; padding-left: 8%;}
+main .script2 h1 {font-family: 'Silk_Serif','Times New Roman', Times, serif; padding: 0; margin: 0;}
+main .script2 h1 a {color: white; font-size: 48px; padding-left: 8%;}
+main .script2 p {margin: -10px 0;}
+main .script2 p a {color: white; font-size: 30px; font-family: 'Noto Sans KR'; font-weight: 100; padding-left: 8%;}
+main .script2 img {width: 20%; transform: rotate(90deg)}
+main .script2 section {padding: 50px 0; border-bottom: white solid 1px; width:100%;}
+main .script2 section:last-of-type {border: none; padding: 42.5px;}
+
+main .script2 section.haggenstory {position: relative; padding: 10% 0;}
+main .script2 section.haggenstory img {position:absolute; bottom: 20%; right: 10%; width: 8%; transform: rotate(45deg);}
+
+main .script2 section.campagin {position: relative; padding: 10% 0;}
+main .script2 section.campagin img {position:absolute; bottom: 20%; right: 10%; width: 8%; transform: rotate(45deg);}
+
+/*================*/
+
+main .video {width:100%; order: 5;}
+main .video iframe {max-width: 100%; vertical-align: bottom; height: 800px;}
+
+/*================*/
+
+main section.intro {background-color:#fcf7f3; display: flex; position: relative; width: 100%; order: 6;}
+main section.intro .icecream p, main section.intro .icebar p, main section.intro .icecorn p{margin: 0; font-family: 'Noto Sans KR'; font-weight: 300; font-size: 16.7px; color: #570f26; padding-left: 15%;}
+main section.intro h3{margin: 0; font-family: 'Silk_ Serif','Times New Roman', Times, serif; color: #570f26; font-size: 21px;text-transform: uppercase; padding-top: 30px; padding-left: 15%;}
+main section.intro img {width: 50%; padding-left: 25%;}
+
+main div.icecream img {padding-left: 30%;}
+main div.icecorn img {padding-left: 20%;}
+
+main section.intro .icecream {border-right: #570f26 solid 1px; padding: 150px 25px 50px 25px;}
+main section.intro .icebar {padding: 150px 0 50px 0;}
+main section.intro .icecorn {border-left: #570f26 solid 1px; padding: 150px 25px 50px 25px;}
+main section.intro .mrprod {font-family: 'Aeonik-bold',arial,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14.4px; color: #570f26; text-transform: uppercase; height: 0; position: absolute; top: 7%; left: 5%;}
+
+main section.intro .icecorn {display: block;}
+
+/*footer*/
+
+footer {background-color: #570f26; display: flex; flex-direction: row; flex-wrap:wrap; width: 100%; align-content: center; justify-content: center; justify-items: center;}
+
+footer section ul {display:flex; flex-direction: column; align-items: center; text-transform: uppercase; flex-wrap: wrap; padding: 40px;}
+footer section ul li {color: white; text-align: center;}
+footer section .title { font-family: 'Silk_Serif'; font-size: 30px; text-transform: uppercase;}
+footer section ul li a {font-family: 'Aeonik-regular'; font-size: 13px; color: white;}
+footer section p {margin: 0; color: white; text-align: center; border-top: #3a0b1e 1px solid; padding: 30px; font-family: 'Aeonik-regular',arial,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 12px;}
+footer section.lastfooter {width: 100%;}
+
+footer section:first-of-type {width: 25%;}
+footer section:nth-of-type(4) {width: 25%;}
+
+footer section:nth-of-type(2) {display: block; width: 25%;}
+footer section:nth-of-type(3) {display: block; width: 25%;}

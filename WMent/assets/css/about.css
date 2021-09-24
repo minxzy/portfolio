@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+html body, div, h1 {margin: 0 auto;}
+h2, ul, li, p {list-style: none; margin: 0; padding: 0;}
+a {text-decoration: none;}
+
+header {width: 100%; height: 100vh; position: relative;}
+header nav ul {display: flex; justify-content: space-between; font-family: austin-light; font-size: 1.3rem; width: 30%; right: 0; top: 5%; position: fixed; margin: 0 2%;}
+header .overlay {width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.5);}
+header button {position: relative; display: inline-block; transition: .3s; color: #fff;}
+header button:hover {cursor: pointer;}
+header button::after {position: absolute;bottom: 0;left: 0; content: ''; width: 0; height: 1px;background-color: #fff; transition: .3s;}
+header button:hover::after {width: 100%;}
+header .article {font-family: 'Aeonik-black'; font-size: 6rem; position: absolute; bottom: 0; margin: 2%; color: #fff;}
+header h2 {font-family: "Noto+Sans+KR"; font-weight: 900; font-size: 2.5rem; line-height: 2; margin: 10% 10% 4% 10%; position: absolute; bottom: 22%; color: #fff;}
+header p:nth-of-type(1) {font-family: "Noto+Sans+KR"; font-weight: 300; font-size: 1.2rem; line-height: 1.8; margin: 10% 10% 4% 10%; position: absolute; bottom: 12%; color: #fff;}
+header p:nth-of-type(2) {font-family: "Noto+Sans+KR"; font-weight: 300; font-size: 1.2rem; line-height: 1.8; margin: 10% 10% 5% 10%; position: absolute; bottom: 0; color: #fff;}
+button {border: none; background: transparent;}
+header img {position: absolute; top: 0; left: 0; width: 10%; margin: 2%;}
+
+main {background: #000; color: #fff; position: relative;padding: 2%;}
+main .border {border-bottom: 1px solid #fff; width: 900px; position: absolute; left: 0; margin: 6% 10% 4% 10%;}
+main h2 {font-size: 3rem; font-family: 'Aeonik'; margin: 6% 10% 4% 10%;}
+main p {font-family: "Noto+Sans+KR"; font-weight: 300; font-size: 1.5rem; color: #fff; margin: 5% 10% 4% 10%; line-height: 2;}
+main span {margin-left: 30%;}
+
+/*=Kakao api=*/
+#map { width:100%; height:300px; }

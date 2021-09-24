@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: austin-light;
+    src: url(../fonts/austin-light-web.woff2);
+}
+
+@font-face {
+    font-family: aeonik-italic;
+    src: url(../fonts/Aeonik-MediumItalic.woff);
+}

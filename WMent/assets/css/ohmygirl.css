@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html body, div, h1 {margin: 0 auto;}
+ul, li {list-style: none; margin: 0; padding: 0;}
+a {text-decoration: none;}
+
+#video {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+header {width: 100%; height: 100vh; position: relative;}
+header nav ul {display: flex; justify-content: space-between; font-family: austin-light; font-size: 1.3rem; width: 30%; right: 0; top: 5%; position: fixed; margin: 0 2%;}
+header img {width: 10%; margin: 2%;}
+header button {position: relative; display: inline-block; transition: .3s; color: #fff;}
+header button:hover {cursor: pointer;}
+header button::after {position: absolute;bottom: 0;left: 0; content: ''; width: 0; height: 1px;background-color: #fff; transition: .3s;}
+header button:hover::after {width: 100%;}
+header .article {font-family: 'Aeonik-black'; font-size: 6rem; position: absolute; bottom: 0; margin: 2%; color: #fff;}
+button {border: none; background: transparent;}
+
+main {max-width: 1920px; margin: 0 auto; padding: 3%;}
+#profile h2 {color: #fff; font-family: 'Aeonik-black'; font-size: 3rem;}
+#profile h3 {margin: 0; padding: 0; font-size: 2rem; color: #fff; font-family: "Noto+Sans+KR"; text-underline-position: under;}
+#profile p {color: #fff; font-family: "Noto+Sans+KR"; font-size: 1.5rem; font-weight: 300; line-height: 1.5;}
+.picture {display: grid; grid-template-columns: 50% 50%;}
+.picture img {width: 100%; margin: 5% 0;}
+
+#discography h2 {color: #fff; font-family: 'Aeonik-black'; font-size: 3rem}
+#discography ul {display: flex; flex-direction: row;white-space:nowrap; overflow-x: auto; text-align:center;scrollbar-width: none;}
+#discography ul li {margin: 1%;}
+#discography ul::-webkit-scrollbar {display: none;}
+
+.schedule {position: relative;}
+.schedule h2 {color: #fff; font-family: 'Aeonik-black'; font-size: 3rem; margin-bottom: 1px;}
+.schedule p {color: #fff; font-family: "Noto+Sans+KR"; font-weight: 900; font-size: 1.2rem; line-height: 4; width: 50%;}
+.calendar {width: 65%; position: absolute; right: 0; top: 5%;}
+

@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*=====default=====*/
+
+html {margin: 0 auto; padding: 0; color:#0059ff; max-width: 1920px; min-width: 1500px;}
+body {margin: 0 auto; padding: 28px 50px; background: -webkit-linear-gradient(rgba(1, 89, 255, 0), rgba(1, 89, 255, 0)), url(../images/wm_background.png); background-repeat: no-repeat; background-attachment: fixed !important; background-position: center top !important;  background-size: 100% !important;}
+h1, h3 , p {margin: 0; padding: 0;}
+a {text-decoration: none; color: #fff;}
+ul , li {list-style: none; margin: 0; padding: 0;}
+section {font-family: walfork_heavy,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+img {vertical-align: top;}
+
+::-moz-selection {background: #0059ff; color: #fff;}
+::selection {background: #0059ff; color: #fff;}
+
+/*=====main section=====*/
+
+main {position: relative; height: 40vh; /* background-image: url(../images/haagendaz_main.jpeg); background-repeat: no-repeat; background-size: 100%; */}
+
+.product_title {font-size: 6rem; text-transform:uppercase; line-height: 1;color: #fff;}
+.product_title p::-moz-selection {background: #fff; color: #0059ff;}
+.product_title p::selection {background: #fff; color: #0059ff;}
+
+.view_page {font-size: 3rem; position: absolute; bottom: 10%; right: 0;}
+.view_page a:hover {color: #0059ff; transition: all 0.2s;}
+
+  .workpiece {padding: 45px 0 45px 0; background-color: #fff;position: relative; height: 3300px; padding: 45px 50px;}
+  .workpiece_title {font-family: "hd_gothic"; font-size: 3rem; margin: 30px 0 0 0;}
+  .workpiece > .product_script {font-family: "Noto+Sans+KR"; font-weight: 400; font-size: 18px; margin: 20px 0; line-height: 1.5; width: 80%;}
+  .workpiece_info {margin-top: 12%;}
+  .workpiece_info > p {font-family: "hd_gothic"; font-size: 2.6em;}
+  .workpiece_info img {width: 50px; margin-left: 10px;}
+  #tempo {width: 100%;}
+
+  .view_pages .pages_png {width: 275px; height: 40px; border: 4px solid #0059ff; color: #0059ff; text-align: center; line-height: 40px; font-size: 1.7rem; position: absolute; top: 25%; margin-top: 20px; transition: all 0.3s; font-family: "Walfork_heavy";}
+  .view_pages .pages_png:hover {background-color: #0059ff; color: #fff}
+
+
+  .product_intro {width: 600px; position: absolute; top: 40%; right: 0; line-height: 1.8; padding: 28px 50px;}
+  .product_intro div {margin-bottom: 20px;}
+  .product_intro h3 {font-size: 2rem;}
+  .product_intro h4 {font-size: 1.5rem;}
+  .product_intro h4:first-of-type {margin-top: 10px;}
+  .product_intro p {font-family: "Noto+Sans+KR"; font-size: 1.2rem;}
+  #smart_device {margin-left: 40px;}
+  .product_intro #prod_title {font-weight: 900; font-size: 1.35rem; margin: 5% 0 3% 0;}
+
+  .keyword_circle {display: flex; margin: 20px auto;}
+  .keyword_circle li {width: 120px; height: 120px; text-align:center; background-color: #0059ff; color: #fff; border-radius: 50%; margin: 0 20px; font-family: "Noto+Sans+KR"; font-size: 1.3rem; display: flex; align-items: center; line-height: 1.5;}
+  .keyword_circle li span {padding-top: 10px;}
+
+  .typography {position: relative; padding-bottom: 12%;}
+  .typography .typo_kor {position: absolute; top: 3%; right: 35%;}
+  .typography .typo_kor li {font-family: "Noto+Sans+KR"; font-size: 1.3rem;}
+  .typography .typo_eng {position: absolute; top: 3%; right: 13%;}
+  .typography .typo_eng li:first-child {font-family: "Roboto"; font-size: 1.3rem; font-weight: 700;}
+  .typography .typo_eng li:nth-child(2) {font-family: "aeonik"; font-size: 1.3rem;}
+
+  .color_system ul {display: flex;}
+  .color_system li {width: 150px; height: 50px;}
+  .color_system li:first-child {background: #fff; border: 1px solid #c1c0bf; width: 148px; height: 48px;}
+  .color_system li:nth-child(2) {background: #0ed3f3;}
+  .color_system li:nth-child(3) {background: #4b1ca5;}
+  .color_system li:nth-child(4) {background: #ff15b6;}
+  
+
+/*=====footer section=====*/ 
+
+footer {color: #fff; padding-top: 2%;}
+footer a::-moz-selection {background: #fff; color: #0059ff;}
+footer a::selection {background: #fff; color: #0059ff;}
+.footer_info {font-size: 4rem; line-height: 1;}
+.port_links {display: flex;}
+.port_links li {padding: 10px 20px 10px 0; font-size: 1.8rem; text-transform: capitalize;}
+.port_links li a {padding: 3px;}
+.port_links li a:hover {background-color: #000; color: #fff000;}
+
+/*=====modal=====*/ 
+
+.modal-window {position: fixed; background-color: rgba(0, 89, 255, 0.3); backdrop-filter: blur(4px); top: 0; right: 0; bottom: 0; left: 0;
+z-index: 999; visibility:visible; opacity: 0; pointer-events: none;transition: all 0.3s; text-align: center;}
+.modal-window:target {visibility: visible; opacity: 1;pointer-events: auto;}
+.modal-window > div {width: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 2em; background: white;}
+.modal-close {color: #000; line-height: 50px; font-family: "walfork_heavy"; font-size: 1.2rem; position: absolute; right: 0;
+top: 0; text-align: center; width: 80px; text-decoration: none;
+}
+.modal-close:hover {color: #0059ff;}
+.modal-window > div {border-radius: 1rem;}
+.modal-window div:not(:last-of-type) {margin-bottom: 15px;}
+
+.pdf_interior .btn {text-decoration: none; position: absolute; left: 30%;font-family: "walfork_heavy"; width: 275px; height: 40px; border: 4px solid #0059ff; color: #0059ff; text-align: center; line-height: 40px; font-size: 1.7rem; position: absolute; top: 100%; margin-top: 20px; transition: all 0.3s;}
+.btn:hover {background-color: #0059ff; color: #fff}
+
+.inner_img {width: 10%;}

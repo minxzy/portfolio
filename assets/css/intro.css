@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*=====default=====*/
+
+html {margin: 0 auto; padding: 0; color:#0059ff; max-width: 1600px; min-width: 1500px;}
+body {margin: 0 auto; /*padding: 28px 50px;*/}
+h1, h3 , p {margin: 0; padding: 0;}
+a {text-decoration: none; color: #0059ff;}
+ul , li {list-style: none; margin: 0; padding: 0;}
+section {font-family: walfork_heavy,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+img {vertical-align: top;}
+
+::-moz-selection {background: #0059ff; color: #fff;}
+::selection {background: #0059ff; color: #fff;}
+
+/*=====main section=====*/
+
+main {position: relative; padding: 28px 50px;}
+
+.nav {float: right; position: relative; width: 240px; height: 25px;}
+.contact_me .contact_mail {width: 275px; height: 40px; border: 4px solid #0059ff; text-align: center; line-height: 40px; font-size: 1.7rem; position: absolute; right: 40%; top: 50%; transition: all 0.3s;}
+.contact_me .contact_mail:hover {background-color: #0059ff; color: #fff}
+
+.menu {width: 70px; height: 70px; border-radius: 50%; background-color: #0059ff; position: fixed; right: 0; z-index: 399; margin-right: 50px;}
+.menu span {background: #fff; height: 3px; width: 30px; margin: 23px 0 0 20px; display: block; transition: all 0.3s ease;}
+.menu span:nth-of-type(2), .menu span:nth-of-type(3){margin-top: 8px;}
+.menu.active {background-color: #fff;}
+.menu.active .top {transform: translateY(11px) translateX(0) rotate(45deg); background: #0059ff;}
+.menu.active .middle {opacity: 0; background: #0059ff;}
+.menu.active .bottom {transform: translateY(-11px) translateX(0) rotate(-45deg); background: #0059ff;}
+
+.overlay {position: fixed; background: #000; top: 0; left: 0; width: 100%; height: 0%; opacity: 1; visibility: hidden; overflow: hidden; z-index: 50; transition: opacity 0.35s, visibility 0.35s, height 0.35s;}
+.overlay_menu {position: relative; top: 220px; transform: translateY(-50%); font-family: "walfork_heavy"; font-size: 4.5rem; text-align: center; margin: 100px 0;}
+.overlay ul {display: inline-block; position: relative; margin-top: 13%;}
+.overlay ul li {display: block; position: relative; opacity: 0; padding-top: 20px;}
+.overlay ul li:nth-child(6), .overlay ul li:nth-child(7), .overlay ul li:nth-child(8){font-size: 2rem;}
+.overlay ul li a {display: block; position: relative; color: #0059ff;}
+.overlay ul li a:hover {color: #fff000; transition: all 0.5s;}
+
+.overlay.open {opacity: 1; visibility: visible; height: 100%;}
+.overlay.open li {animation: fadeFromTop 1s ease forwards; animation-delay: 0.2s;}
+.overlay.open li:nth-of-type(2) {animation-delay: 0.25s;}
+.overlay.open li:nth-of-type(3) {animation-delay: 0.3s;}
+.overlay.open li:nth-of-type(4) {animation-delay: 0.35s;}
+.overlay.open li:nth-of-type(5) {animation-delay: 0.4s;}
+.overlay.open li:nth-of-type(6) {animation-delay: 0.45s;}
+.overlay.open li:nth-of-type(7) {animation-delay: 0.5s;}
+.overlay.open li:nth-of-type(8) {animation-delay: 0.55s;}
+
+@keyframes fadeFromTop {
+    0% {
+        opacity: 0.6;
+        top: 100%;
+   }
+    100% {
+        opacity: 1;
+        top: 0%;
+   }
+}
+
+.aboutme_intro {font-size: 3.8rem; font-family: hd_gothic; line-height: 1.4; width: 700px; margin-bottom: 50px;}
+.hand_waving {
+    width: 60px; margin: 10px 0 0 10px;
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .minji_emoji {width: 30%; margin: 0 auto;}
+  .aboutme_article {position: relative; height: 450px;}
+  .border_line {width: 20%; border-bottom: 3px solid #0059ff; position: absolute; transform: rotate(90deg); top: 50%; left: 25%;}
+  .intro_paragraph {font-family: "Noto+Sans+KR"; font-size: 21px; font-weight: 300; position: absolute; margin-left: 45%; right: 0; top: 26%; line-height: 1.5; max-width: 100%;}
+  .intro_paragraph2 {font-family: "Noto+Sans+KR"; font-size: 21px; font-weight: 300; position: absolute; margin-left: 45%; right: 0; top: 58%; line-height: 1.5; max-width: 100%;}
+
+  .aboutme_intro {height: 280px; max-width: 1300px;}
+  .ability {padding: 45px 0 45px 0; background-color: #f2f2f2;position: relative; height: 630px; padding: 45px 50px; margin: 0 auto;}
+  .ability > p {font-family: "hd_gothic"; font-size: 3rem;}
+  .view_resume .resume {width: 275px; height: 40px; border: 4px solid #0059ff; text-align: center; line-height: 40px; font-size: 1.7rem; position: absolute; top: 25%; margin-top: 20px; transition: all 0.3s;}
+  .view_resume .resume:hover {background-color: #0059ff; color: #fff}
+
+  .ability_list {width: 600px; position: absolute; top: 20%; right: 0; line-height: 1.8; padding: 28px 50px;}
+  .ability_list div {margin-bottom: 20px;}
+  .ability_list h3 {font-size: 1.8rem;}
+  .ability_list p {font-family: "Noto+Sans+KR"; font-size: 1.2rem;}
+  .thinking_face {width: 55px; margin-top: 3px;}
+
+
+
+/*=====footer section=====*/ 
+
+footer {padding: 28px 50px;}
+.footer_info {font-size: 4rem; line-height: 1;}
+.port_links {display: flex;}
+.port_links li {padding: 10px 20px 10px 0; font-size: 1.8rem; text-transform: capitalize;}
+.port_links li a {padding: 3px;}
+.port_links li a:hover {background-color: #000; color: #fff000;}

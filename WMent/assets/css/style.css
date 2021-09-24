@@ -1,0 +1,276 @@
+@charset "utf-8";
+html body, div, h1 {color: #fff; margin: 0 auto;}
+ul, li {list-style: none; margin: 1%; padding: 0;}
+a {text-decoration: none; color: #fff;}
+
+.first {position: relative;}
+.first .artist {font-family: austin-light; position: absolute; top: 15%; margin: 2%;}
+.first .artist li {padding: 10px 0;}
+nav ul {display: flex; justify-content: space-between; font-family: austin-light; font-size: 2.5rem; width: 38%; right: 0; top: 0; position: absolute;}
+.first h1 {font-family: Aeonik-black; text-align: center; position: absolute; width: 100%; font-size: 27rem;}
+.first .artist {font-size: 2rem; position: absolute;}
+.first img {width: 10%; position: absolute; top: 0; margin: 2%;}
+.first a {position: relative; display: inline-block; transition: .3s;}
+.first a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: .3s;
+  }
+  .first a:hover::after {
+    width: 100%;
+  }
+  .first .overlay {width: 100%; background-color: rgba(0, 0, 0, 0.5);}
+
+
+.second {position: relative;}
+.second img {width: 45%; position: absolute; top: 14vh; right: 0; transition: all 0.3s;}
+.second img:hover {filter: blur(5px);}
+.second h1 {mix-blend-mode:color-dodge; font-size: 13rem; position: absolute; top: 15%; left: 16%; background: linear-gradient(to right, #abfff9, #7400d1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: aeonik-italic; letter-spacing :10px; line-height: 1;}
+.second span {font-family: austin-light;}
+.second p {mix-blend-mode: color-dodge; font-size: 10rem; position: absolute; top: 22%; left: 10%; font-family: aeonik-italic; letter-spacing :10px; line-height: 1.3;}
+.second span {font-family: austin-light;}
+
+.third {position:relative;}
+.third img {width: 45%; top: 14vh; left: 0; transition: all 0.3s;}
+.third img:hover {filter: blur(5px);}
+.third h1 {mix-blend-mode:color-dodge; font-size: 13rem; position: absolute; bottom: 15%; right: 10%; background: linear-gradient(to right, #ff00ff, #1afdff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: aeonik-italic; letter-spacing :10px; line-height: 1;}
+.third span {font-family: austin-light;}
+.third p {mix-blend-mode: color-dodge; font-size: 10rem; position: absolute; top: 38%; right: 10%; font-family: aeonik-italic; letter-spacing :10px; line-height: 1.3;}
+.third span {font-family: austin-light;}
+
+.forth {position: relative;}
+.forth img {width: 45%; position: absolute; top: 14vh; right: 0; transition: all 0.3s;}
+.forth img:hover {filter: blur(5px);}
+.forth h1 {mix-blend-mode:color-dodge; font-size: 13rem; position: absolute; top: 15%; left: 18%; background: linear-gradient(to right, #00ffff, #8f00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: aeonik-italic; letter-spacing :10px; line-height: 1;}
+.forth span {font-family: austin-light;}
+.forth p {mix-blend-mode: color-dodge; font-size: 10rem; position: absolute; top: 20%; left: 12%; font-family: aeonik-italic; letter-spacing :10px; line-height: 1.3;}
+.forth span {font-family: austin-light;}
+
+.fifth {position:relative;}
+.fifth img {width: 45%; top: 14vh; left: 0; transition: all 0.3s;}
+.fifth img:hover {filter: blur(5px);}
+.fifth h1 {mix-blend-mode:color-dodge; font-size: 13rem; position: absolute; bottom: 15%; right: 10%; background: linear-gradient(to right, #5010ff, #ff8ae1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: aeonik-italic; letter-spacing :10px; line-height: 1;}
+.fifth span {font-family: austin-light;}
+.fifth p {mix-blend-mode: color-dodge; font-size: 10rem; position: absolute; top: 40%; right: 5%; font-family: aeonik-italic; letter-spacing :10px; line-height: 1.3;}
+.fifth span {font-family: austin-light;}
+
+.sixth {background: #000; color: #fff; position: relative;}
+marquee {padding: 10px; position: absolute; top: 0; font-size: 3rem; line-height: 2;}
+.sixth h2 {font-size: 3rem; position: absolute; left: 10%; top: 20%; font-family: 'Aeonik';}
+.sixth p:first-of-type {font-size: 1.3rem; position: absolute; left: 10%; top:31%; font-family: 'Noto+Sans+KR'; font-weight: 300; line-height: 2;}
+.sixth p:last-of-type {font-size: 1.1rem; position: absolute; left: 10%; bottom: 10%; font-family: 'Noto+Sans+KR'; font-weight: 300; line-height: 2;} 
+.sixth ul {font-family: 'Noto+Sans+KR'; font-weight: 700; line-height: 2; font-size: 1.2rem; position: absolute; left: 10%; bottom: 20%; width: 40%; margin: 0;}
+.sixth span {padding: 0 20%;}
+
+
+#video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popup{
+    background-color: #42126b;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2 {color: #fff; font-size: 2rem; padding-bottom: 50px;}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    color: #fff;
+}
+
+.sound-icon {
+    display: flex;
+    flex-direction: column;
+    position: absolute; right: 10%; bottom: 10%;
+  }
+  
+  .sound-wave {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sound-wave .bar {
+    display: block;
+    width: 2px;
+    margin-right: 1px;
+    height: 200px;
+    background: #ff00ff;
+    animation: sound 0ms -800ms linear infinite alternate;
+    transition: height 0.8s;
+  }
+  
+  .sound-wave .bar2{
+    display: block;
+    width: 2px;
+    margin-right: 1px;
+    height: 300px;
+    background: #00ffe0;
+    animation: sound2 0ms -800ms linear infinite alternate;
+    transition: height 0.8s;
+  }
+  
+  @keyframes sound {
+    0% {
+      opacity: .35;
+      height: 100px;
+    }
+    100% {
+      opacity: 1;
+      height: 30px;
+    }
+  }
+  
+  @keyframes sound2 {
+    0% {
+      opacity: .35;
+      height: 100px;
+    }
+    100% {
+      opacity: 1;
+      height: 30px;
+    }
+  }
+  .bar:nth-child(1) {
+    height: 2px;
+    animation-duration: 474ms;
+  }
+  
+  .bar:nth-child(2) {
+    height: 10px;
+    animation-duration: 433ms;
+  }
+  
+  .bar:nth-child(3) {
+    height: 18px;
+    animation-duration: 407ms;
+  }
+  
+  .bar:nth-child(4) {
+    height: 26px;
+    animation-duration: 458ms;
+  }
+  
+  .bar:nth-child(5) {
+    height: 30px;
+    animation-duration: 400ms;
+  }
+  
+  .bar:nth-child(6) {
+    height: 32px;
+    animation-duration: 427ms;
+  }
+  
+  .bar:nth-child(7) {
+    height: 34px;
+    animation-duration: 441ms;
+  }
+  
+  .bar:nth-child(8) {
+    height: 36px;
+    animation-duration: 419ms;
+  }
+  
+  .bar:nth-child(9) {
+    height: 40px;
+    animation-duration: 487ms;
+  }
+  
+  .bar:nth-child(10) {
+    height: 46px;
+    animation-duration: 442ms;
+  }
+  
+  .bar:nth-child(11) {
+    height: 2px;
+    animation-duration: 474ms;
+  }
+  
+  .bar:nth-child(12) {
+    height: 10px;
+    animation-duration: 433ms;
+  }
+  
+  .bar:nth-child(13) {
+    height: 18px;
+    animation-duration: 407ms;
+  }
+  
+  .bar:nth-child(14) {
+    height: 26px;
+    animation-duration: 458ms;
+  }
+  
+  .bar:nth-child(15) {
+    height: 30px;
+    animation-duration: 400ms;
+  }
+  
+  .bar:nth-child(16) {
+    height: 32px;
+    animation-duration: 427ms;
+  }
+  
+  .bar:nth-child(17) {
+    height: 34px;
+    animation-duration: 441ms;
+  }
+  
+  .bar:nth-child(18) {
+    height: 36px;
+    animation-duration: 419ms;
+  }
+  
+  .bar:nth-child(19) {
+    height: 40px;
+    animation-duration: 487ms;
+  }
+  
+  .bar:nth-child(20) {
+    height: 46px;
+    animation-duration: 442ms;
+  }
+  
