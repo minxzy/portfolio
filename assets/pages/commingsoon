@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="반갑습니다! 저는 디자인과 퍼블리싱을 공부하는 멀티 플레이어 김민지예요.">
+
+ <!--opengraphy-->
+ <meta name="Robots" content="ALL">
+ <meta property="og:type" content="Website">
+ <meta property="og:site_name" content="멀티플레이어 김민지">
+ <meta property="og:title" content="MINJI KIM - WEB PORTFOLIO">
+ <meta property="og:description" content="반갑습니다! 저는 디자인과 퍼블리싱을 공부하는 멀티 플레이어 김민지예요.">
+ <meta property="og:url" content="https://minxzy.netlify.app/">
+ <meta property="og:image" content="../images/opengraphy.png">
+
+<title>MINJI KIM | WEB PORTFOLIO</title>
+
+<!--favicon-->
+<link href="assets/images/favicon_blue_heart.ico" rel="icon" type="image/x-icon">
+
+<!--normalize css-->
+<link rel="stylesheet" href="assets/css/normalize.css">
+<!--swiper css-->
+
+<style>
+    @font-face {
+        font-family: walfork_heavy;
+        src: url(../fonts/walfork_heavy.woff2);
+    }
+
+    html, body {margin: 0 auto;}
+    h2 {font-size: 3rem;}
+
+    footer {color: #fff; padding-top: 2%;}
+    footer a::-moz-selection {background: #fff; color: #0059ff;}
+    footer a::selection {background: #fff; color: #0059ff;}
+    .footer_info {font-size: 4rem; line-height: 1;}
+    .port_links {display: flex;}
+    .port_links li {padding: 10px 20px 10px 0; font-size: 1.8rem; text-transform: capitalize;}
+    .port_links li a {padding: 3px;}
+    .port_links li a:hover {background-color: #000; color: #fff000;}
+
+</style>
+
+ <body>
+    <h2>COMMING SOON</h2>
+
+             <!--footer section-->
+             <footer data-aos="fade-right" data-aos-duration="500">
+                <section class="footer_info">
+                   <ul class="footer_intro">
+                       <li class="footer_name">MINJI KIM</li>
+                       <li class="footer_tel"><a href=tel:010-8526-2289>+82 10 8526 2289</a></li>
+                       <li class="footer_email"><a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=minxxzy@gmail.com" class="contact_mail">minxxzy@gmail.com</a></li>
+                    </ul>
+               </section>
+               <section class="footer_links">
+                   <ul class="port_links">
+                       <li><a href="https://www.notion.so/33b6f9c9e09e4527907e2afd8b249d05" target="_blank">resume</a></li> <!--notion 링크-->
+                       <li><a href="https://www.behance.net/2triplexda59" target="_blank">behance</a></li> <!--behance 링크-->
+                       <li><a href="https://notefolio.net/magnumopus" target="_blank">notefolio</a></li> <!--notefolio 링크-->
+                       <li><a target="_blank" href="https://github.com/minxzy" target="_blank">github</a></li> <!--github 링크-->
+                   </ul>
+               </section>
+               <p>&copy; MINJI KIM. All rights reserved. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with prior permission of MINJI KIM.</p>
+           </footer>
+ </body>
+ </html>
